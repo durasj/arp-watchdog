@@ -4,21 +4,15 @@ Non-serious project. Not intended for use in the real world.
 
 ![Demo](res/demo.gif)
 
-## Requirements
-* For Windows: [WinPcap](http://www.winpcap.org/install/default.htm)
-* For *nix: libpcap and libpcap-dev/libpcap-devel packages
-
 ## Features
 * ARP poisoning watching on the wanted interface
 * Hiding to tray with native notifications
 * Poisoning simulation
 * Configuration support
 
-<!---
 ## Downloads
-* [Windows x64](https://github.com/durasj/arp-watchdog/releases/download/v0.1.0/ARPWD-0.1.0-win.x64.zip)
-* [Linux x64](https://github.com/durasj/arp-watchdog/releases/download/v0.1.0/ARPWD-0.1.0-linux.x64.zip)
--->
+* [Windows x64](https://github.com/durasj/arp-watchdog/releases/download/v0.1.0/ARPWD-0.1.0-win.x64.zip) - tested on Windows 10, wired LAN
+* Ready to be built for other platforms as well
 
 ## Configuration
 
@@ -37,6 +31,8 @@ Configuration can be done using config.json:
 **Requirements**:
 * Node.js v6 LTS + NPM
 * Windows for win32 packaging
+* For Windows: [WinPcap](http://www.winpcap.org/install/default.htm)
+* For *nix: libpcap and libpcap-dev/libpcap-devel packages
 
 Clone this repository and install dependencies:
 
@@ -44,6 +40,7 @@ Clone this repository and install dependencies:
 git clone https://github.com/durasj/arp-watchdog.git
 cd arp-watchdog
 npm install
+npm start
 ```
 
 After file changes, run `npm start`. The project should be built and the app opened.
