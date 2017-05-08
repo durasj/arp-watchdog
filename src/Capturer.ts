@@ -172,7 +172,7 @@ export default class Capturer {
         const deviceMac = this.extractMacFromString(deviceMacString);
         const deviceIp = this.extractIpFromString(deviceIpString);
 
-        const buffer = new Buffer ([
+        const buffer = Buffer.from([
             // ETHERNET
             ...deviceMac,               // 0    = Destination MAC
             ...deviceMac,               // 6    = Source MAC
