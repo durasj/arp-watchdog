@@ -91,7 +91,7 @@ export default class Capturer {
 
         const filter = 'arp';
         const bufSize = 10 * 1024 * 1024;
-        const buffer = new Buffer(65535);
+        const buffer = Buffer.alloc(65535);
 
         const linkType = this.cap.open(deviceId, filter, bufSize, buffer);
 
